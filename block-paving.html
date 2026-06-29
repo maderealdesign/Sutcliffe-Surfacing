@@ -11,11 +11,15 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sutcliffe-surfacing.co.uk/block-paving.html">
   <meta property="og:image" content="https://allseasonspaving.co.uk/wp-content/uploads/2024/02/flagging-services-1024x610.jpeg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
     tailwind.config = {
       theme: {
@@ -37,18 +41,96 @@
       }
     }
   </script>
+
   <style>
+    /* Smooth Scrolling */
     html { scroll-behavior: smooth; }
+
+    /* Mobile Menu Animation */
     #mobile-menu { transition: transform 0.3s ease-in-out; }
+
+    /* Form focus styles */
     input:focus, select:focus, textarea:focus { outline: none; border-color: #cca45e; box-shadow: 0 0 0 3px rgba(204, 164, 94, 0.2); }
+
+    /* Custom scrollbar */
     ::-webkit-scrollbar { width: 10px; }
     ::-webkit-scrollbar-track { background: #f1f1f1; }
     ::-webkit-scrollbar-thumb { background: #cca45e; }
     ::-webkit-scrollbar-thumb:hover { background: #b58d47; }
+
+    /* FAQ Accordion animation */
+    .faq-answer {
+        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .faq-item.active .faq-answer {
+        max-height: 500px;
+    }
+    .faq-item.active .faq-icon {
+        transform: rotate(180deg);
+    }
   </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://sutcliffe-surfacing.co.uk/#business","name":"Sutcliffe Surfacing","url":"https://sutcliffe-surfacing.co.uk","telephone":"07548 849 682","email":"bensutcliffe31@outlook.com","image":"https://imagerenamer.co.uk/api/file/C2iHJVY7M1XjYLhyTUGOvgneqaC2/efce5eab-6a54-4f0b-b868-d91dc6a517e7/c96ff8c9-9648-4569-af14-fd0749b40aa8-sutcliffe-surfacing-logo.webp","areaServed":["Lancashire","Burnley","Blackburn","Preston","Clitheroe","Pendle","Lancaster","Morecambe","Skipton"],"knowsAbout":["Resin bound driveways","Indoor epoxy flooring","Block paving","Tarmac surfacing","Landscaping","Groundworks"]},{"@type":"WebPage","@id":"https://sutcliffe-surfacing.co.uk/block-paving.html#webpage","url":"https://sutcliffe-surfacing.co.uk/block-paving.html","name":"Block Paving and Flagging Lancashire | Sutcliffe Surfacing","description":"Block paving and flagging for driveways, paths, patios and garden areas with careful levels, strong edging and tidy detailing.","isPartOf":{"@id":"https://sutcliffe-surfacing.co.uk/#website"},"about":{"@id":"https://sutcliffe-surfacing.co.uk/#business"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is block paving suitable for driveways?","acceptedAnswer":{"@type":"Answer","text":"Yes, when it is installed on the right sub-base with suitable edge restraints and a layout designed for vehicle use."}},{"@type":"Question","name":"Can paving be combined with resin or tarmac?","acceptedAnswer":{"@type":"Answer","text":"Yes. Paving borders and detail areas can work very well alongside resin bound or tarmac surfaces."}},{"@type":"Question","name":"Do you handle drainage and levels?","acceptedAnswer":{"@type":"Answer","text":"Yes. Drainage, falls and thresholds are assessed before the paving layout is finalised."}},{"@type":"Question","name":"What block paving pattern is best for driveways?","acceptedAnswer":{"@type":"Answer","text":"It depends on the block type and layout, but driveway patterns should be chosen around vehicle movement, edge restraint and the look of the property."}},{"@type":"Question","name":"Can old block paving be repaired?","acceptedAnswer":{"@type":"Answer","text":"Sometimes. We inspect the cause of movement, sinking or spreading before recommending repair, relaying or full replacement."}},{"@type":"Question","name":"Is flagging better for patios than driveways?","acceptedAnswer":{"@type":"Answer","text":"Flags can be excellent for patios and paths, while driveway areas need materials and build-up suitable for vehicle loads."}}]}]}</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://sutcliffe-surfacing.co.uk/#business",
+        "name": "Sutcliffe Surfacing",
+        "url": "https://sutcliffe-surfacing.co.uk",
+        "telephone": "07548 849 682",
+        "email": "bensutcliffe31@outlook.com",
+        "image": "https://imagerenamer.co.uk/api/file/C2iHJVY7M1XjYLhyTUGOvgneqaC2/efce5eab-6a54-4f0b-b868-d91dc6a517e7/c96ff8c9-9648-4569-af14-fd0749b40aa8-sutcliffe-surfacing-logo.webp",
+        "areaServed": ["Lancashire", "Burnley", "Blackburn", "Preston", "Clitheroe", "Pendle", "Lancaster", "Morecambe", "Skipton"],
+        "knowsAbout": ["Resin bound driveways", "Indoor epoxy flooring", "Block paving", "Tarmac surfacing", "Landscaping", "Groundworks"]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://sutcliffe-surfacing.co.uk/block-paving.html#webpage",
+        "url": "https://sutcliffe-surfacing.co.uk/block-paving.html",
+        "name": "Block Paving and Flagging Lancashire | Sutcliffe Surfacing",
+        "description": "Block paving and flagging for driveways, paths, patios and garden areas with careful levels, strong edging and tidy detailing.",
+        "isPartOf": {"@id": "https://sutcliffe-surfacing.co.uk/#website"},
+        "about": {"@id": "https://sutcliffe-surfacing.co.uk/#business"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is block paving suitable for driveways?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, when it is installed on the right sub-base with suitable edge restraints and a layout designed for vehicle use."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can paving be combined with resin or tarmac?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Paving borders and detail areas can work very well alongside resin bound or tarmac surfaces."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you handle drainage and levels?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Drainage, falls and thresholds are assessed before the paving layout is finalised."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="font-sans text-gray-800 bg-brand-offwhite antialiased selection:bg-brand-primary selection:text-white">
+
   <div class="hidden md:block bg-gray-900 text-gray-300 py-2 text-sm border-b border-gray-800">
     <div class="container mx-auto px-4 flex justify-between items-center">
       <p><i class="fas fa-map-marker-alt text-brand-primary mr-2"></i> Serving Lancashire and Surrounding Areas</p>
@@ -65,7 +147,15 @@
         <img src="https://imagerenamer.co.uk/api/file/C2iHJVY7M1XjYLhyTUGOvgneqaC2/efce5eab-6a54-4f0b-b868-d91dc6a517e7/c96ff8c9-9648-4569-af14-fd0749b40aa8-sutcliffe-surfacing-logo.webp" alt="Sutcliffe Surfacing" class="h-10 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
       </a>
       <div class="hidden xl:flex items-center space-x-7 font-heading font-semibold text-sm tracking-wide">
-        <a href="index.html" class="text-gray-700 hover:text-brand-primary transition">Home</a><a href="about.html" class="text-gray-700 hover:text-brand-primary transition">About</a><a href="portfolio.html" class="text-gray-700 hover:text-brand-primary transition">Portfolio</a><a href="reviews.html" class="text-gray-700 hover:text-brand-primary transition">Reviews</a><a href="resin-driveways.html" class="text-gray-700 hover:text-brand-primary transition">Resin Driveways</a><a href="indoor-epoxy.html" class="text-gray-700 hover:text-brand-primary transition">Indoor Epoxy</a><a href="block-paving.html" class="text-brand-primary transition">Block Paving</a><a href="tarmac.html" class="text-gray-700 hover:text-brand-primary transition">Tarmac</a><a href="landscaping.html" class="text-gray-700 hover:text-brand-primary transition">Landscaping</a>
+        <a href="index.html" class="text-gray-700 hover:text-brand-primary transition">Home</a>
+        <a href="about.html" class="text-gray-700 hover:text-brand-primary transition">About</a>
+        <a href="portfolio.html" class="text-gray-700 hover:text-brand-primary transition">Portfolio</a>
+        <a href="reviews.html" class="text-gray-700 hover:text-brand-primary transition">Reviews</a>
+        <a href="resin-driveways.html" class="text-gray-700 hover:text-brand-primary transition">Resin Driveways</a>
+        <a href="indoor-epoxy.html" class="text-gray-700 hover:text-brand-primary transition">Indoor Epoxy</a>
+        <a href="block-paving.html" class="text-brand-primary border-b-2 border-brand-primary pb-1 transition">Block Paving</a>
+        <a href="tarmac.html" class="text-gray-700 hover:text-brand-primary transition">Tarmac</a>
+        <a href="landscaping.html" class="text-gray-700 hover:text-brand-primary transition">Landscaping</a>
         <a href="contact.html" class="bg-brand-primary text-white px-6 py-2.5 rounded-full hover:bg-gray-900 transition shadow-lg font-bold transform hover:-translate-y-0.5 border-2 border-brand-primary">Get a Quote</a>
       </div>
       <div class="flex items-center xl:hidden space-x-5">
@@ -77,233 +167,395 @@
 
   <div id="mobile-menu" class="fixed inset-0 bg-white z-40 transform translate-x-full xl:hidden flex flex-col pt-24 px-6 space-y-5 text-xl font-heading font-bold shadow-2xl text-gray-800 border-l border-gray-100 overflow-y-auto">
     <button id="close-menu" class="absolute top-6 right-6 text-3xl text-gray-400 p-2 hover:text-gray-800" aria-label="Close menu"><i class="fas fa-times"></i></button>
-    <a href="index.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Home</a><a href="about.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">About</a><a href="portfolio.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Portfolio</a><a href="reviews.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Reviews</a><a href="resin-driveways.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Resin Driveways</a><a href="indoor-epoxy.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Indoor Epoxy</a><a href="block-paving.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Block Paving</a><a href="tarmac.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Tarmac</a><a href="landscaping.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Landscaping</a>
+    <a href="index.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Home</a>
+    <a href="about.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">About</a>
+    <a href="portfolio.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Portfolio</a>
+    <a href="reviews.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Reviews</a>
+    <a href="resin-driveways.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Resin Driveways</a>
+    <a href="indoor-epoxy.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Indoor Epoxy</a>
+    <a href="block-paving.html" class="menu-link border-b border-gray-100 pb-3 text-brand-primary">Block Paving</a>
+    <a href="tarmac.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Tarmac</a>
+    <a href="landscaping.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Landscaping</a>
     <a href="contact.html" class="text-brand-primary mt-4">Get a Free Quote</a>
-    <div class="mt-auto mb-10 text-sm font-normal text-gray-500"><p>Call us directly:</p><a href="tel:07548849682" class="text-3xl font-bold text-gray-900 block mt-1">07548 849 682</a></div>
+    <div class="mt-auto mb-10 text-sm font-normal text-gray-500">
+      <p>Call us directly:</p>
+      <a href="tel:07548849682" class="text-3xl font-bold text-gray-900 block mt-1">07548 849 682</a>
+    </div>
   </div>
 
-  <header class="relative min-h-[560px] flex items-center justify-center text-center px-4 overflow-hidden">
-    <div class="absolute inset-0 w-full h-full z-0">
-      <img src="https://allseasonspaving.co.uk/wp-content/uploads/2024/02/flagging-services-1024x610.jpeg" alt="Block Paving and Flagging" class="w-full h-full object-cover object-center">
-      <div class="absolute inset-0 bg-black/70"></div>
-    </div>
-    <div class="relative z-10 max-w-5xl mx-auto mt-8 py-20">
-      <div class="inline-flex items-center bg-brand-primary text-white font-bold text-xs px-4 py-1.5 rounded-full mb-6 tracking-widest uppercase shadow-md">
-        <i class="fas fa-th-large mr-2"></i> Driveways, Patios and Paths
-      </div>
-      <h1 class="font-heading font-bold text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight drop-shadow-2xl"><span class="text-brand-primary">Block Paving</span> & Flagging</h1>
-      <p class="text-gray-200 text-lg md:text-xl lg:text-2xl mb-10 max-w-3xl mx-auto drop-shadow-md font-medium">Practical, attractive paving installed with proper levels, restraints, drainage and detailing.</p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="contact.html" class="bg-brand-primary text-white font-bold py-4 px-10 rounded-full shadow-2xl hover:bg-white hover:text-black transition transform hover:scale-105 w-full sm:w-auto text-lg">Get Your Free Quote</a>
-        <a href="portfolio.html" class="bg-black/40 backdrop-blur-md border border-brand-primary/50 text-white font-bold py-4 px-10 rounded-full hover:bg-white hover:text-black transition w-full sm:w-auto text-lg">View Our Work</a>
-      </div>
-    </div>
-  </header>
-
   <main>
-    <section class="py-16 md:py-24 bg-brand-offwhite">
+    <header class="relative min-h-[600px] h-[75vh] flex items-center justify-center text-center px-4 overflow-hidden">
+      <div class="absolute inset-0 w-full h-full z-0">
+        <img src="https://allseasonspaving.co.uk/wp-content/uploads/2024/02/flagging-services-1024x610.jpeg" alt="Block Paving and Flagging Lancashire" class="w-full h-full object-cover object-center transition duration-1000">
+        <div class="absolute inset-0 bg-black/75"></div>
+      </div>
+
+      <div class="relative z-10 max-w-5xl mx-auto mt-8">
+        <div class="inline-flex items-center bg-brand-primary text-white font-bold text-xs px-4 py-1.5 rounded-full mb-6 tracking-widest uppercase shadow-md">
+          <i class="fas fa-th-large mr-2"></i> Driveways, Patios and Paths
+        </div>
+
+        <h1 class="font-heading font-black text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight drop-shadow-2xl">
+          Premium <span class="text-brand-primary">Block Paving</span> & Flagging
+        </h1>
+
+        <p class="text-gray-200 text-lg md:text-xl lg:text-2xl mb-10 max-w-3xl mx-auto drop-shadow-md font-medium leading-relaxed">
+          Practical, attractive paving installed with proper levels, restraints, drainage and detailing. We transform outdoor spaces with precision and durability across Lancashire.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="contact.html" class="bg-brand-primary text-white font-bold py-4 px-10 rounded-full shadow-2xl hover:bg-white hover:text-black transition transform hover:scale-105 w-full sm:w-auto text-lg border-2 border-brand-primary">
+            Get Your Free Quote
+          </a>
+          <a href="portfolio.html" class="bg-black/40 backdrop-blur-md border border-brand-primary/50 text-white font-bold py-4 px-10 rounded-full hover:bg-white hover:text-black transition w-full sm:w-auto text-lg">
+            View Our Work
+          </a>
+        </div>
+      </div>
+
+      <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180">
+          <svg class="relative block w-full h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#F9F8F6"></path>
+          </svg>
+      </div>
+    </header>
+
+    <section class="py-20 md:py-28 bg-brand-offwhite">
       <div class="container mx-auto px-4 max-w-6xl grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-start">
+
         <div>
           <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Paving Detail</span>
           <h2 class="text-3xl md:text-5xl font-heading font-black text-black mb-6 leading-tight">Good paving is all about the groundwork you do not see.</h2>
-          <p class="text-gray-600 leading-relaxed text-lg mb-5">Block paving and flagging give a property structure, pattern and definition. They can frame a driveway, create practical garden paths, build a smart patio or form a hard-wearing entrance with more character than a plain surface.</p><p class="text-gray-600 leading-relaxed text-lg mb-5">We plan the levels, sub-base, edge restraints and drainage from the start, because those details decide whether paving continues to look neat after real daily use.</p>
-          <ul class="space-y-4 font-bold text-gray-800"><li class="flex items-start gap-3"><i class="fas fa-check-circle text-brand-primary mt-1"></i><span>Driveways, patios, paths, steps and garden zones</span></li><li class="flex items-start gap-3"><i class="fas fa-check-circle text-brand-primary mt-1"></i><span>Block, flag and edging details planned together</span></li><li class="flex items-start gap-3"><i class="fas fa-check-circle text-brand-primary mt-1"></i><span>Suitable for classic, modern and rural properties</span></li><li class="flex items-start gap-3"><i class="fas fa-check-circle text-brand-primary mt-1"></i><span>Repairs, replacements and full new installations considered</span></li></ul>
+
+          <p class="text-gray-600 leading-relaxed text-lg mb-5">
+            Block paving and flagging give a property structure, pattern and definition. They can frame a driveway, create practical garden paths, build a smart patio or form a hard-wearing entrance with more character than a plain surface.
+          </p>
+          <p class="text-gray-600 leading-relaxed text-lg mb-8">
+            We plan the levels, sub-base, edge restraints and drainage from the start, because those details decide whether paving continues to look neat after real daily use. Without a rock-solid foundation, even the most beautiful paving will ultimately fail.
+          </p>
+
+          <ul class="space-y-4 font-bold text-gray-800">
+            <li class="flex items-start gap-4">
+              <i class="fas fa-check-circle text-brand-primary text-xl mt-1"></i>
+              <span><strong>Versatile Application:</strong> Suitable for driveways, patios, paths, steps and garden zones.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-check-circle text-brand-primary text-xl mt-1"></i>
+              <span><strong>Holistic Design:</strong> Block, flag and edging details planned together for a seamless finish.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-check-circle text-brand-primary text-xl mt-1"></i>
+              <span><strong>Aesthetic Flexibility:</strong> Highly suitable for classic, modern and rural properties alike.</span>
+            </li>
+            <li class="flex items-start gap-4">
+              <i class="fas fa-check-circle text-brand-primary text-xl mt-1"></i>
+              <span><strong>Comprehensive Services:</strong> Repairs, replacements and full new installations considered.</span>
+            </li>
+          </ul>
         </div>
-        <aside class="bg-white rounded-2xl p-7 shadow-xl border border-gray-100">
-          <h3 class="font-heading font-black text-2xl text-black mb-5">Best for</h3>
-          <div class="grid grid-cols-2 gap-3 mb-6"><div class="rounded-xl bg-brand-offwhite border border-gray-100 p-4 text-center font-bold text-gray-800">Driveways</div><div class="rounded-xl bg-brand-offwhite border border-gray-100 p-4 text-center font-bold text-gray-800">Patios</div><div class="rounded-xl bg-brand-offwhite border border-gray-100 p-4 text-center font-bold text-gray-800">Paths</div><div class="rounded-xl bg-brand-offwhite border border-gray-100 p-4 text-center font-bold text-gray-800">Steps</div></div>
-          <p class="text-gray-600 leading-relaxed">We quote after looking at the existing surface, access, levels, drainage and the finish you want. That keeps the recommendation specific to the property.</p>
+
+        <aside class="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 relative overflow-hidden">
+          <div class="absolute top-0 right-0 text-brand-primary/5 text-8xl pointer-events-none">
+            <i class="fas fa-th-large"></i>
+          </div>
+
+          <div class="relative z-10">
+            <h3 class="font-heading font-black text-3xl text-black mb-6">Best used for:</h3>
+
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <div class="rounded-2xl bg-brand-offwhite border border-gray-100 p-6 text-center shadow-sm hover:shadow-md transition-shadow group">
+                <i class="fas fa-car text-brand-primary text-2xl mb-3 group-hover:scale-110 transition-transform"></i>
+                <p class="font-bold text-gray-900">Driveways</p>
+              </div>
+              <div class="rounded-2xl bg-brand-offwhite border border-gray-100 p-6 text-center shadow-sm hover:shadow-md transition-shadow group">
+                <i class="fas fa-chair text-brand-primary text-2xl mb-3 group-hover:scale-110 transition-transform"></i>
+                <p class="font-bold text-gray-900">Patios</p>
+              </div>
+              <div class="rounded-2xl bg-brand-offwhite border border-gray-100 p-6 text-center shadow-sm hover:shadow-md transition-shadow group">
+                <i class="fas fa-shoe-prints text-brand-primary text-2xl mb-3 group-hover:scale-110 transition-transform"></i>
+                <p class="font-bold text-gray-900">Paths</p>
+              </div>
+              <div class="rounded-2xl bg-brand-offwhite border border-gray-100 p-6 text-center shadow-sm hover:shadow-md transition-shadow group">
+                <i class="fas fa-shoe-prints text-brand-primary text-2xl mb-3 group-hover:scale-110 transition-transform"></i>
+                <p class="font-bold text-gray-900">Steps</p>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-brand-primary p-4 rounded-r-lg">
+              <p class="text-gray-700 leading-relaxed text-sm font-medium">
+                We quote after looking at the existing surface, access, levels, drainage and the finish you want. That keeps the recommendation specific to the property.
+              </p>
+            </div>
+          </div>
         </aside>
       </div>
     </section>
-    <section class="py-16 md:py-20 bg-white">
+
+    <section class="py-20 bg-white">
       <div class="container mx-auto px-4 max-w-7xl">
-        <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="text-center max-w-3xl mx-auto mb-16">
           <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Why It Matters</span>
-          <h2 class="text-3xl md:text-5xl font-heading font-black text-black">Built for how the space is used</h2>
+          <h2 class="text-4xl md:text-5xl font-heading font-black text-black">Built for how the space is used</h2>
         </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-    <article class="bg-white rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-xl transition">
-      <i class="fas fa-ruler-combined text-brand-primary text-3xl mb-4"></i>
-      <h3 class="font-heading font-bold text-xl text-black mb-3">Accurate levels</h3>
-      <p class="text-gray-600 leading-relaxed text-sm">Levels and falls are planned so the paving works with doors, drains, paths, walls and garden features.</p>
-    </article>
-    <article class="bg-white rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-xl transition">
-      <i class="fas fa-border-style text-brand-primary text-3xl mb-4"></i>
-      <h3 class="font-heading font-bold text-xl text-black mb-3">Strong restraints</h3>
-      <p class="text-gray-600 leading-relaxed text-sm">Edges, kerbs and borders are specified to keep the surface contained and tidy over time.</p>
-    </article>
-    <article class="bg-white rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-xl transition">
-      <i class="fas fa-shapes text-brand-primary text-3xl mb-4"></i>
-      <h3 class="font-heading font-bold text-xl text-black mb-3">Pattern and texture</h3>
-      <p class="text-gray-600 leading-relaxed text-sm">Paving can add visual rhythm through bond pattern, colour mix, border choice and the size of slab or block.</p>
-    </article></div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <article class="bg-brand-offwhite rounded-2xl border border-gray-100 p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm border border-gray-100 group-hover:bg-brand-primary transition duration-300">
+              <i class="fas fa-ruler-combined text-brand-primary group-hover:text-white text-3xl transition duration-300"></i>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-black mb-4">Accurate Levels</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Levels and falls are planned so the paving works seamlessly with doors, drains, paths, walls and existing garden features. Proper leveling prevents water pooling and ensures longevity.
+            </p>
+          </article>
+
+          <article class="bg-brand-offwhite rounded-2xl border border-gray-100 p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm border border-gray-100 group-hover:bg-brand-primary transition duration-300">
+              <i class="fas fa-border-style text-brand-primary group-hover:text-white text-3xl transition duration-300"></i>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-black mb-4">Strong Restraints</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Edges, kerbs and borders are carefully specified to keep the surface strictly contained and tidy over time. Without strong edge restraints, block paving can shift under vehicular weight.
+            </p>
+          </article>
+
+          <article class="bg-brand-offwhite rounded-2xl border border-gray-100 p-8 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm border border-gray-100 group-hover:bg-brand-primary transition duration-300">
+              <i class="fas fa-shapes text-brand-primary group-hover:text-white text-3xl transition duration-300"></i>
+            </div>
+            <h3 class="font-heading font-bold text-2xl text-black mb-4">Pattern & Texture</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Paving can add significant visual rhythm through bond pattern, colour mix, border choice and the varying size of slab or block. This customization ensures a completely unique aesthetic.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="py-20 bg-white">
-      <div class="container mx-auto px-4 max-w-7xl">
-        <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-start">
+    <section class="py-20 md:py-28 bg-gray-900 text-white relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-1/2 h-full bg-brand-primary/5 -skew-x-12 transform origin-top-right pointer-events-none"></div>
+
+      <div class="container mx-auto px-4 max-w-7xl relative z-10">
+        <div class="grid lg:grid-cols-[0.9fr_1.3fr] gap-16 items-center">
+
           <div>
-            <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Block Paving Facts</span>
-            <h2 class="font-heading font-black text-3xl md:text-5xl text-black mb-6">Why block paving is still one of the most flexible driveway choices</h2>
-            <p class="text-gray-600 text-lg leading-relaxed mb-5">Block paving is made from individual blocks laid in a pattern over a prepared base. That gives it a different character from tarmac or resin: more texture, more pattern and more control over borders, curves, paths and detail areas.</p>
-            <p class="text-gray-600 text-lg leading-relaxed">The visual finish is only half the story. The sub-base, compaction, restraints, falls and jointing decide whether the paving stays neat after real use.</p>
+            <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Clear Process</span>
+            <h2 class="text-4xl md:text-5xl font-heading font-black mb-6 leading-tight">How the project is handled</h2>
+            <p class="text-gray-400 leading-relaxed text-lg mb-8">
+              Good surfacing is completely planned before it is installed. We look at access, drainage, levels, preparation and the finish you want before ever recommending the right build-up.
+            </p>
+            <a href="contact.html" class="inline-flex items-center text-brand-primary font-bold hover:text-white transition group border-b border-brand-primary pb-1">
+              Start your paving project <i class="fas fa-chevron-right ml-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+            </a>
           </div>
-          <div class="grid sm:grid-cols-3 gap-4">
-            <article class="bg-brand-offwhite rounded-2xl border border-gray-100 p-5 shadow-sm"><i class="fas fa-circle-info text-brand-primary text-2xl mb-4"></i><h3 class="font-heading font-bold text-lg text-black mb-2">Individual blocks</h3><p class="text-gray-600 text-sm leading-relaxed">Because the surface is made from separate units, pattern, borders and repairs can be handled differently from continuous surfaces.</p></article><article class="bg-brand-offwhite rounded-2xl border border-gray-100 p-5 shadow-sm"><i class="fas fa-circle-info text-brand-primary text-2xl mb-4"></i><h3 class="font-heading font-bold text-lg text-black mb-2">Strong edge restraints</h3><p class="text-gray-600 text-sm leading-relaxed">Paving needs secure edges to stop movement, spreading and loss of shape over time.</p></article><article class="bg-brand-offwhite rounded-2xl border border-gray-100 p-5 shadow-sm"><i class="fas fa-circle-info text-brand-primary text-2xl mb-4"></i><h3 class="font-heading font-bold text-lg text-black mb-2">Levels and falls</h3><p class="text-gray-600 text-sm leading-relaxed">Paving must be set out around drainage, door thresholds, paths, garages and garden levels.</p></article>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+            <article class="rounded-2xl border border-gray-800 bg-black p-8 shadow-2xl hover:border-brand-primary/50 transition-colors duration-300">
+              <span class="text-brand-primary font-heading font-black text-4xl mb-4 block">01</span>
+              <h3 class="font-heading font-bold text-2xl text-white mb-3">Design the layout</h3>
+              <p class="text-gray-400 leading-relaxed">
+                We closely look at access, paths, parking, garden use and the surrounding property before setting out the area.
+              </p>
+            </article>
+
+            <article class="rounded-2xl border border-gray-800 bg-black p-8 shadow-2xl hover:border-brand-primary/50 transition-colors duration-300 transform sm:translate-y-6">
+              <span class="text-brand-primary font-heading font-black text-4xl mb-4 block">02</span>
+              <h3 class="font-heading font-bold text-2xl text-white mb-3">Prepare the base</h3>
+              <p class="text-gray-400 leading-relaxed">
+                The sub-base, compaction and restraints are handled carefully before any visible paving is installed. This prevents future sinking.
+              </p>
+            </article>
+
+            <article class="rounded-2xl border border-gray-800 bg-black p-8 shadow-2xl hover:border-brand-primary/50 transition-colors duration-300">
+              <span class="text-brand-primary font-heading font-black text-4xl mb-4 block">03</span>
+              <h3 class="font-heading font-bold text-2xl text-white mb-3">Lay and detail</h3>
+              <p class="text-gray-400 leading-relaxed">
+                Blocks or flags are laid exactly to the agreed pattern with exceptionally clean cuts and strict attention around edges.
+              </p>
+            </article>
+
+            <article class="rounded-2xl border border-gray-800 bg-black p-8 shadow-2xl hover:border-brand-primary/50 transition-colors duration-300 transform sm:translate-y-6">
+              <span class="text-brand-primary font-heading font-black text-4xl mb-4 block">04</span>
+              <h3 class="font-heading font-bold text-2xl text-white mb-3">Finish neatly</h3>
+              <p class="text-gray-400 leading-relaxed">
+                Final jointing, sanding or pointing is completed, locking the blocks in place, and the working area is left clean.
+              </p>
+            </article>
           </div>
+
         </div>
-      </div>
-    </section>
-    <section class="py-20 bg-brand-offwhite">
-      <div class="container mx-auto px-4 max-w-7xl">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Selling Points</span>
-          <h2 class="font-heading font-black text-3xl md:text-5xl text-black">Why choose block paving and flagging?</h2>
-        </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5"><article class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-xl transition"><i class="fas fa-shapes text-brand-primary text-3xl mb-4"></i><h3 class="font-heading font-bold text-xl text-black mb-3">Pattern and character</h3><p class="text-gray-600 text-sm leading-relaxed">Block choice, laying pattern and border design can add detail to the front or rear of a property.</p></article><article class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-xl transition"><i class="fas fa-route text-brand-primary text-3xl mb-4"></i><h3 class="font-heading font-bold text-xl text-black mb-3">Great for paths</h3><p class="text-gray-600 text-sm leading-relaxed">Paving is excellent for walkways, patios, side paths and garden routes as well as driveways.</p></article><article class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-xl transition"><i class="fas fa-border-all text-brand-primary text-3xl mb-4"></i><h3 class="font-heading font-bold text-xl text-black mb-3">Defined edges</h3><p class="text-gray-600 text-sm leading-relaxed">Blocks and flags can form attractive borders around resin, tarmac, lawns and planting areas.</p></article><article class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-xl transition"><i class="fas fa-car-side text-brand-primary text-3xl mb-4"></i><h3 class="font-heading font-bold text-xl text-black mb-3">Driveway ready</h3><p class="text-gray-600 text-sm leading-relaxed">With the right base and layout, block paving can support regular vehicle use.</p></article><article class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-xl transition"><i class="fas fa-screwdriver-wrench text-brand-primary text-3xl mb-4"></i><h3 class="font-heading font-bold text-xl text-black mb-3">Repairable sections</h3><p class="text-gray-600 text-sm leading-relaxed">Individual areas can often be lifted or adjusted more easily than continuous surfaces.</p></article><article class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-xl transition"><i class="fas fa-house-chimney text-brand-primary text-3xl mb-4"></i><h3 class="font-heading font-bold text-xl text-black mb-3">Works with many homes</h3><p class="text-gray-600 text-sm leading-relaxed">Classic and modern block styles can suit terraces, semis, rural homes and newer properties.</p></article></div>
-      </div>
-    </section>
-    <section class="py-20 bg-black text-white">
-      <div class="container mx-auto px-4 max-w-7xl">
-        <div class="grid lg:grid-cols-[0.95fr_1.05fr] gap-12 items-start">
-          <div>
-            <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Comparison</span>
-            <h2 class="font-heading font-black text-3xl md:text-5xl mb-6">Block paving vs resin and tarmac</h2>
-            <p class="text-gray-300 text-lg leading-relaxed">Block paving is best when pattern, definition and layout flexibility matter. Resin is smoother and more continuous; tarmac is often more practical for larger hard-working areas.</p>
-          </div>
-          <div class="grid sm:grid-cols-3 gap-4">
-            <article class="rounded-2xl border border-white/10 bg-white/5 p-6"><h3 class="font-heading font-bold text-xl mb-3 text-brand-primary">Compared with resin</h3><p class="text-gray-300 text-sm leading-relaxed">Paving gives more visible pattern and individual block detail; resin gives a smoother stone carpet finish.</p></article><article class="rounded-2xl border border-white/10 bg-white/5 p-6"><h3 class="font-heading font-bold text-xl mb-3 text-brand-primary">Compared with tarmac</h3><p class="text-gray-300 text-sm leading-relaxed">Paving usually feels more decorative, while tarmac is often chosen for larger practical parking areas.</p></article><article class="rounded-2xl border border-white/10 bg-white/5 p-6"><h3 class="font-heading font-bold text-xl mb-3 text-brand-primary">Compared with flags</h3><p class="text-gray-300 text-sm leading-relaxed">Flags can suit patios and paths; blocks often handle driveway patterns and borders more flexibly.</p></article>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-20 bg-white">
-      <div class="container mx-auto px-4 max-w-7xl grid lg:grid-cols-2 gap-12 items-start">
-        <div>
-          <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Options</span>
-          <h2 class="font-heading font-black text-3xl md:text-5xl text-black mb-6">Block paving design choices</h2>
-          <div class="grid sm:grid-cols-2 gap-4"><article class="bg-brand-offwhite rounded-xl border border-gray-100 p-5"><i class="fas fa-layer-group text-brand-primary mb-3"></i><h3 class="font-heading font-bold text-lg text-black mb-2">Laying pattern</h3><p class="text-gray-600 text-sm leading-relaxed">Herringbone, stretcher bond and other layouts change both appearance and suitability.</p></article><article class="bg-brand-offwhite rounded-xl border border-gray-100 p-5"><i class="fas fa-layer-group text-brand-primary mb-3"></i><h3 class="font-heading font-bold text-lg text-black mb-2">Border colour</h3><p class="text-gray-600 text-sm leading-relaxed">Contrasting borders can frame a driveway and create a sharper edge.</p></article><article class="bg-brand-offwhite rounded-xl border border-gray-100 p-5"><i class="fas fa-layer-group text-brand-primary mb-3"></i><h3 class="font-heading font-bold text-lg text-black mb-2">Block size and tone</h3><p class="text-gray-600 text-sm leading-relaxed">Small blocks, larger flags and mixed tones all create different visual styles.</p></article><article class="bg-brand-offwhite rounded-xl border border-gray-100 p-5"><i class="fas fa-layer-group text-brand-primary mb-3"></i><h3 class="font-heading font-bold text-lg text-black mb-2">Drainage integration</h3><p class="text-gray-600 text-sm leading-relaxed">Channels, falls and permeable details are planned around the property.</p></article></div>
-        </div>
-        <div class="bg-brand-offwhite rounded-2xl border border-gray-100 p-7 shadow-xl">
-          <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Avoid These Mistakes</span>
-          <h2 class="font-heading font-black text-3xl text-black mb-6">Block paving mistakes to avoid</h2>
-          <ul class="space-y-4 font-bold text-gray-800"><li class="flex items-start gap-3"><i class="fas fa-check-circle text-brand-primary mt-1"></i><span>Weak sub-base or poor compaction under vehicle areas</span></li><li class="flex items-start gap-3"><i class="fas fa-check-circle text-brand-primary mt-1"></i><span>No proper edge restraint around the surface</span></li><li class="flex items-start gap-3"><i class="fas fa-check-circle text-brand-primary mt-1"></i><span>Poor falls that send water towards the house</span></li><li class="flex items-start gap-3"><i class="fas fa-check-circle text-brand-primary mt-1"></i><span>Choosing colours without considering the brickwork and borders</span></li><li class="flex items-start gap-3"><i class="fas fa-check-circle text-brand-primary mt-1"></i><span>Ignoring steps, thresholds, manholes and awkward cuts</span></li></ul>
-        </div>
-      </div>
-    </section>
-    <section class="py-16 bg-brand-offwhite">
-      <div class="container mx-auto px-4 max-w-6xl">
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4"><div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm"><i class="fas fa-check-circle text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Driveways, patios, paths, steps and garden zones</p></div><div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm"><i class="fas fa-check-circle text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Block, flag and edging details planned together</p></div><div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm"><i class="fas fa-check-circle text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Suitable for classic, modern and rural properties</p></div><div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm"><i class="fas fa-check-circle text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Repairs, replacements and full new installations considered</p></div></div>
       </div>
     </section>
 
-    <section class="py-16 md:py-20 bg-black text-white">
-    <div class="container mx-auto px-4 max-w-6xl">
-      <div class="grid lg:grid-cols-[0.9fr_1.3fr] gap-10 items-start">
-        <div>
-          <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Clear Process</span>
-          <h2 class="text-3xl md:text-5xl font-heading font-black mb-5">How the project is handled</h2>
-          <p class="text-gray-300 leading-relaxed">Good surfacing is planned before it is installed. We look at access, drainage, levels, preparation and the finish you want before recommending the right build-up.</p>
-        </div>
-        <div class="grid sm:grid-cols-2 gap-4">
-          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
-            <span class="text-brand-primary font-heading font-black text-3xl">01</span>
-            <h3 class="font-heading font-bold text-xl mt-3 mb-2">Design the layout</h3>
-            <p class="text-gray-300 text-sm leading-relaxed">We look at access, paths, parking, garden use and the surrounding property before setting out the area.</p>
-          </article>
-          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
-            <span class="text-brand-primary font-heading font-black text-3xl">02</span>
-            <h3 class="font-heading font-bold text-xl mt-3 mb-2">Prepare the base</h3>
-            <p class="text-gray-300 text-sm leading-relaxed">The sub-base, compaction and restraints are handled carefully before any visible paving is installed.</p>
-          </article>
-          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
-            <span class="text-brand-primary font-heading font-black text-3xl">03</span>
-            <h3 class="font-heading font-bold text-xl mt-3 mb-2">Lay and detail</h3>
-            <p class="text-gray-300 text-sm leading-relaxed">Blocks or flags are laid to the agreed pattern with clean cuts and attention around edges.</p>
-          </article>
-          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
-            <span class="text-brand-primary font-heading font-black text-3xl">04</span>
-            <h3 class="font-heading font-bold text-xl mt-3 mb-2">Finish neatly</h3>
-            <p class="text-gray-300 text-sm leading-relaxed">Jointing, sanding or pointing is completed and the working area is left clean.</p>
-          </article></div>
-      </div>
-    </div>
-  </section>
-    <section class="py-16 md:py-20 bg-brand-offwhite">
-      <div class="container mx-auto px-4 max-w-6xl grid lg:grid-cols-2 gap-10 items-center">
+    <section class="py-20 md:py-28 bg-brand-offwhite">
+      <div class="container mx-auto px-4 max-w-7xl grid lg:grid-cols-2 gap-16 items-center">
+
         <div>
           <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Practical Advice</span>
-          <h2 class="text-3xl md:text-5xl font-heading font-black text-black mb-6">Paving with a purpose</h2>
-          <p class="text-gray-600 text-lg leading-relaxed mb-6">Block paving can be decorative, but it also solves practical problems. It can create a defined parking area, safer paths, a usable patio, better garden movement or a more polished entrance to the property.</p>
-          <a href="contact.html" class="inline-flex items-center font-bold text-brand-primary hover:text-black transition text-lg">Book a free survey <i class="fas fa-arrow-right ml-2"></i></a>
+          <h2 class="text-4xl md:text-5xl font-heading font-black text-black mb-8 leading-tight">Paving with a definite purpose</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-8">
+            Block paving can be highly decorative, but it primarily also solves practical problems. It can create a defined parking area, safer pedestrian paths, a highly usable patio, better garden movement or a much more polished entrance to the property.
+          </p>
+          <a href="contact.html" class="bg-brand-primary text-white font-bold py-4 px-10 rounded-full shadow-lg hover:bg-black hover:text-white transition transform hover:scale-105 inline-block border-2 border-brand-primary">
+            Book a free survey <i class="fas fa-arrow-right ml-2"></i>
+          </a>
         </div>
-        <div class="grid sm:grid-cols-2 gap-4"><div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm"><i class="fas fa-location-dot text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Defined driveway and parking bays</p></div><div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm"><i class="fas fa-location-dot text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Garden paths and patio seating areas</p></div><div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm"><i class="fas fa-location-dot text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Border details alongside resin or tarmac</p></div><div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm"><i class="fas fa-location-dot text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Steps, thresholds and entrance zones</p></div></div>
+
+        <div class="grid sm:grid-cols-2 gap-6 relative">
+          <div class="hidden sm:block absolute top-1/2 left-0 w-full h-px bg-gray-200 -z-10"></div>
+          <div class="hidden sm:block absolute top-0 left-1/2 w-px h-full bg-gray-200 -z-10"></div>
+
+          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-xl hover:-translate-y-1 transition-transform group">
+            <div class="w-12 h-12 bg-brand-offwhite rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition">
+              <i class="fas fa-car text-brand-primary group-hover:text-white text-xl"></i>
+            </div>
+            <p class="font-bold text-gray-900 text-lg">Defined driveway and parking bays</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-xl hover:-translate-y-1 transition-transform group sm:mt-12">
+            <div class="w-12 h-12 bg-brand-offwhite rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition">
+              <i class="fas fa-chair text-brand-primary group-hover:text-white text-xl"></i>
+            </div>
+            <p class="font-bold text-gray-900 text-lg">Garden paths and patio seating areas</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-xl hover:-translate-y-1 transition-transform group">
+            <div class="w-12 h-12 bg-brand-offwhite rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition">
+              <i class="fas fa-layer-group text-brand-primary group-hover:text-white text-xl"></i>
+            </div>
+            <p class="font-bold text-gray-900 text-lg">Border details alongside resin or tarmac</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-xl hover:-translate-y-1 transition-transform group sm:mt-12">
+            <div class="w-12 h-12 bg-brand-offwhite rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition">
+              <i class="fas fa-shoe-prints text-brand-primary group-hover:text-white text-xl"></i>
+            </div>
+            <p class="font-bold text-gray-900 text-lg">Steps, thresholds and entrance zones</p>
+          </div>
+        </div>
+
       </div>
     </section>
-    <section class="py-16 md:py-20 bg-white">
-    <div class="container mx-auto px-4 max-w-6xl">
-      <div class="grid lg:grid-cols-2 gap-10">
-        <div>
-          <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Explore Services</span>
-          <h2 class="font-heading font-black text-3xl text-black mb-5">Related surfacing options</h2>
-          <div class="grid sm:grid-cols-2 gap-3"><a class="flex items-center gap-3 rounded-xl border border-gray-200 bg-brand-offwhite p-4 font-bold hover:text-brand-primary hover:shadow-md transition" href="resin-driveways.html"><i class="fas fa-road text-brand-primary"></i>Resin Driveways</a><a class="flex items-center gap-3 rounded-xl border border-gray-200 bg-brand-offwhite p-4 font-bold hover:text-brand-primary hover:shadow-md transition" href="indoor-epoxy.html"><i class="fas fa-layer-group text-brand-primary"></i>Indoor Epoxy</a><a class="flex items-center gap-3 rounded-xl border border-gray-200 bg-brand-offwhite p-4 font-bold hover:text-brand-primary hover:shadow-md transition" href="tarmac.html"><i class="fas fa-truck-pickup text-brand-primary"></i>Tarmac</a><a class="flex items-center gap-3 rounded-xl border border-gray-200 bg-brand-offwhite p-4 font-bold hover:text-brand-primary hover:shadow-md transition" href="landscaping.html"><i class="fas fa-tree text-brand-primary"></i>Landscaping</a></div>
-        </div>
-        <div>
-          <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Areas Covered</span>
-          <h2 class="font-heading font-black text-3xl text-black mb-5">Local landing pages</h2>
-          <div class="flex flex-wrap gap-3"><a class="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-bold text-gray-700 hover:border-brand-primary hover:text-brand-primary transition" href="burnley.html">Burnley</a><a class="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-bold text-gray-700 hover:border-brand-primary hover:text-brand-primary transition" href="blackburn.html">Blackburn</a><a class="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-bold text-gray-700 hover:border-brand-primary hover:text-brand-primary transition" href="preston.html">Preston</a><a class="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-bold text-gray-700 hover:border-brand-primary hover:text-brand-primary transition" href="clitheroe-and-ribble-valley.html">Clitheroe &amp; Ribble Valley</a><a class="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-bold text-gray-700 hover:border-brand-primary hover:text-brand-primary transition" href="colne-and-pendle.html">Colne &amp; Pendle</a><a class="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-bold text-gray-700 hover:border-brand-primary hover:text-brand-primary transition" href="nelson-and-brierfield.html">Nelson &amp; Brierfield</a><a class="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-bold text-gray-700 hover:border-brand-primary hover:text-brand-primary transition" href="lancaster-and-morecambe.html">Lancaster &amp; Morecambe</a><a class="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-bold text-gray-700 hover:border-brand-primary hover:text-brand-primary transition" href="skipton.html">Skipton</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-    <section class="py-16 md:py-20 bg-brand-offwhite">
-    <div class="container mx-auto px-4 max-w-4xl">
-      <div class="text-center mb-10">
-        <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Helpful Answers</span>
-        <h2 class="text-3xl md:text-5xl font-heading font-black text-black">Common questions</h2>
-      </div>
-      <div class="space-y-4">
-        <article class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-          <h3 class="font-heading font-bold text-lg text-black mb-2">Is block paving suitable for driveways?</h3>
-          <p class="text-gray-600 leading-relaxed">Yes, when it is installed on the right sub-base with suitable edge restraints and a layout designed for vehicle use.</p>
-        </article>
-        <article class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-          <h3 class="font-heading font-bold text-lg text-black mb-2">Can paving be combined with resin or tarmac?</h3>
-          <p class="text-gray-600 leading-relaxed">Yes. Paving borders and detail areas can work very well alongside resin bound or tarmac surfaces.</p>
-        </article>
-        <article class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-          <h3 class="font-heading font-bold text-lg text-black mb-2">Do you handle drainage and levels?</h3>
-          <p class="text-gray-600 leading-relaxed">Yes. Drainage, falls and thresholds are assessed before the paving layout is finalised.</p>
-        </article>
-        <article class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-          <h3 class="font-heading font-bold text-lg text-black mb-2">What block paving pattern is best for driveways?</h3>
-          <p class="text-gray-600 leading-relaxed">It depends on the block type and layout, but driveway patterns should be chosen around vehicle movement, edge restraint and the look of the property.</p>
-        </article>
-        <article class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-          <h3 class="font-heading font-bold text-lg text-black mb-2">Can old block paving be repaired?</h3>
-          <p class="text-gray-600 leading-relaxed">Sometimes. We inspect the cause of movement, sinking or spreading before recommending repair, relaying or full replacement.</p>
-        </article>
-        <article class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-          <h3 class="font-heading font-bold text-lg text-black mb-2">Is flagging better for patios than driveways?</h3>
-          <p class="text-gray-600 leading-relaxed">Flags can be excellent for patios and paths, while driveway areas need materials and build-up suitable for vehicle loads.</p>
-        </article></div>
-    </div>
-  </section>
-  </main>
 
-  <section class="py-16 md:py-20 bg-black text-white">
-    <div class="container mx-auto px-4 max-w-5xl text-center">
-      <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-3">Free Site Survey</span>
-      <h2 class="font-heading font-black text-3xl md:text-5xl mb-5">Ready to improve your surface?</h2>
-      <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-8">Tell us what you want to achieve and we will advise on the right build-up, finish, drainage and preparation before quoting clearly.</p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="tel:07548849682" class="bg-brand-primary text-white font-bold py-4 px-8 rounded-full hover:bg-white hover:text-black transition"><i class="fas fa-phone mr-2"></i>Call 07548 849 682</a>
-        <a href="contact.html" class="border border-brand-primary/70 text-white font-bold py-4 px-8 rounded-full hover:bg-white hover:text-black transition">Request a Quote</a>
+    <section class="py-20 md:py-28 bg-white border-t border-gray-100">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="text-center mb-16">
+          <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Helpful Answers</span>
+          <h2 class="text-4xl md:text-5xl font-heading font-black text-black">Common questions</h2>
+        </div>
+
+        <div class="space-y-4">
+          <div class="faq-item bg-brand-offwhite border border-gray-200 rounded-xl overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
+            <div class="px-8 py-6 flex justify-between items-center">
+              <h3 class="font-heading font-bold text-xl text-gray-900 pr-8">Is block paving suitable for driveways?</h3>
+              <i class="fas fa-chevron-down text-brand-primary text-xl faq-icon transition-transform duration-300"></i>
+            </div>
+            <div class="faq-answer bg-white px-8 text-gray-600 text-lg leading-relaxed border-t border-gray-100">
+              <div class="py-6">
+                Yes, when it is installed on the right sub-base with suitable edge restraints and a layout designed specifically for heavy vehicle use. The deep compacted base is what provides the structural strength.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item bg-brand-offwhite border border-gray-200 rounded-xl overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
+            <div class="px-8 py-6 flex justify-between items-center">
+              <h3 class="font-heading font-bold text-xl text-gray-900 pr-8">Can paving be combined with resin or tarmac?</h3>
+              <i class="fas fa-chevron-down text-brand-primary text-xl faq-icon transition-transform duration-300"></i>
+            </div>
+            <div class="faq-answer bg-white px-8 text-gray-600 text-lg leading-relaxed border-t border-gray-100">
+              <div class="py-6">
+                Yes. Paving borders and detail areas can work very well alongside resin bound or tarmac surfaces. It often provides a fantastic contrasting frame that highlights the main driveway surface.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item bg-brand-offwhite border border-gray-200 rounded-xl overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
+            <div class="px-8 py-6 flex justify-between items-center">
+              <h3 class="font-heading font-bold text-xl text-gray-900 pr-8">Do you handle drainage and levels?</h3>
+              <i class="fas fa-chevron-down text-brand-primary text-xl faq-icon transition-transform duration-300"></i>
+            </div>
+            <div class="faq-answer bg-white px-8 text-gray-600 text-lg leading-relaxed border-t border-gray-100">
+              <div class="py-6">
+                Yes. Drainage, falls and property thresholds are rigorously assessed before the final paving layout is finalised. Ensuring water drains away from your home correctly is paramount to our installation process.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="py-20 bg-brand-offwhite border-t border-gray-200">
+      <div class="container mx-auto px-4 max-w-7xl">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20">
+
+          <div>
+            <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Explore Services</span>
+            <h2 class="font-heading font-black text-3xl text-black mb-8">Related surfacing options</h2>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <a class="group flex items-center gap-4 rounded-xl border border-gray-200 bg-white p-5 font-bold hover:border-brand-primary hover:shadow-xl transition-all duration-300" href="resin-driveways.html">
+                <div class="w-12 h-12 rounded-full bg-brand-offwhite flex items-center justify-center group-hover:bg-brand-primary group-hover:text-white transition">
+                  <i class="fas fa-road text-brand-primary group-hover:text-white"></i>
+                </div>
+                Resin Driveways
+              </a>
+              <a class="group flex items-center gap-4 rounded-xl border border-gray-200 bg-white p-5 font-bold hover:border-brand-primary hover:shadow-xl transition-all duration-300" href="indoor-epoxy.html">
+                <div class="w-12 h-12 rounded-full bg-brand-offwhite flex items-center justify-center group-hover:bg-brand-primary group-hover:text-white transition">
+                  <i class="fas fa-layer-group text-brand-primary group-hover:text-white"></i>
+                </div>
+                Indoor Epoxy
+              </a>
+              <a class="group flex items-center gap-4 rounded-xl border border-gray-200 bg-white p-5 font-bold hover:border-brand-primary hover:shadow-xl transition-all duration-300" href="tarmac.html">
+                <div class="w-12 h-12 rounded-full bg-brand-offwhite flex items-center justify-center group-hover:bg-brand-primary group-hover:text-white transition">
+                  <i class="fas fa-truck-pickup text-brand-primary group-hover:text-white"></i>
+                </div>
+                Tarmac
+              </a>
+              <a class="group flex items-center gap-4 rounded-xl border border-gray-200 bg-white p-5 font-bold hover:border-brand-primary hover:shadow-xl transition-all duration-300" href="landscaping.html">
+                <div class="w-12 h-12 rounded-full bg-brand-offwhite flex items-center justify-center group-hover:bg-brand-primary group-hover:text-white transition">
+                  <i class="fas fa-tree text-brand-primary group-hover:text-white"></i>
+                </div>
+                Landscaping
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Areas Covered</span>
+            <h2 class="font-heading font-black text-3xl text-black mb-8">Local landing pages</h2>
+            <div class="flex flex-wrap gap-3">
+              <a class="rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm font-bold text-gray-700 hover:border-brand-primary hover:bg-brand-primary hover:text-white transition-colors duration-300 shadow-sm" href="burnley.html">Burnley</a>
+              <a class="rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm font-bold text-gray-700 hover:border-brand-primary hover:bg-brand-primary hover:text-white transition-colors duration-300 shadow-sm" href="blackburn.html">Blackburn</a>
+              <a class="rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm font-bold text-gray-700 hover:border-brand-primary hover:bg-brand-primary hover:text-white transition-colors duration-300 shadow-sm" href="preston.html">Preston</a>
+              <a class="rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm font-bold text-gray-700 hover:border-brand-primary hover:bg-brand-primary hover:text-white transition-colors duration-300 shadow-sm" href="clitheroe-and-ribble-valley.html">Clitheroe &amp; Ribble Valley</a>
+              <a class="rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm font-bold text-gray-700 hover:border-brand-primary hover:bg-brand-primary hover:text-white transition-colors duration-300 shadow-sm" href="colne-and-pendle.html">Colne &amp; Pendle</a>
+              <a class="rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm font-bold text-gray-700 hover:border-brand-primary hover:bg-brand-primary hover:text-white transition-colors duration-300 shadow-sm" href="nelson-and-brierfield.html">Nelson &amp; Brierfield</a>
+              <a class="rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm font-bold text-gray-700 hover:border-brand-primary hover:bg-brand-primary hover:text-white transition-colors duration-300 shadow-sm" href="lancaster-and-morecambe.html">Lancaster &amp; Morecambe</a>
+              <a class="rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm font-bold text-gray-700 hover:border-brand-primary hover:bg-brand-primary hover:text-white transition-colors duration-300 shadow-sm" href="skipton.html">Skipton</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-28 bg-black text-white relative overflow-hidden">
+      <div class="container mx-auto px-4 max-w-5xl text-center relative z-10">
+        <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-4">Free Site Survey</span>
+        <h2 class="font-heading font-black text-4xl md:text-6xl mb-6">Ready to improve your surface?</h2>
+        <p class="text-gray-300 text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+          Tell us what you want to achieve and we will advise on the right build-up, finish, drainage and preparation before quoting clearly.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-6">
+          <a href="tel:07548849682" class="bg-brand-primary text-white font-bold py-4 px-10 rounded-full hover:bg-white hover:text-black transition transform hover:scale-105 text-lg shadow-[0_10px_20px_rgba(204,164,94,0.3)] border-2 border-brand-primary">
+            <i class="fas fa-phone mr-2"></i> Call 07548 849 682
+          </a>
+          <a href="contact.html" class="border-2 border-brand-primary/70 text-white font-bold py-4 px-10 rounded-full hover:bg-white hover:text-black transition text-lg backdrop-blur-sm bg-black/20">
+            Request a Quote
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="bg-gray-950 text-gray-400 py-16 border-t border-gray-900">
     <div class="container mx-auto px-4 max-w-7xl">
@@ -311,26 +563,92 @@
         <div class="md:col-span-2">
           <img src="https://imagerenamer.co.uk/api/file/C2iHJVY7M1XjYLhyTUGOvgneqaC2/efce5eab-6a54-4f0b-b868-d91dc6a517e7/c96ff8c9-9648-4569-af14-fd0749b40aa8-sutcliffe-surfacing-logo.webp" alt="Sutcliffe Surfacing Logo" class="h-12 w-auto mb-6 opacity-90 brightness-0 invert">
           <p class="text-sm leading-relaxed mb-6 max-w-sm">Professional, City & Guilds qualified installers specialising in exterior resin bound driveways, bespoke indoor epoxy flooring, block paving, tarmac, landscaping and groundworks.</p>
-          <div class="flex flex-wrap gap-3 text-sm"><a href="burnley.html" class="hover:text-brand-primary transition">Burnley</a><a href="blackburn.html" class="hover:text-brand-primary transition">Blackburn</a><a href="preston.html" class="hover:text-brand-primary transition">Preston</a><a href="clitheroe-and-ribble-valley.html" class="hover:text-brand-primary transition">Clitheroe &amp; Ribble Valley</a><a href="colne-and-pendle.html" class="hover:text-brand-primary transition">Colne &amp; Pendle</a></div>
+          <div class="flex flex-wrap gap-3 text-sm">
+            <a href="burnley.html" class="hover:text-brand-primary transition">Burnley</a>
+            <a href="blackburn.html" class="hover:text-brand-primary transition">Blackburn</a>
+            <a href="preston.html" class="hover:text-brand-primary transition">Preston</a>
+            <a href="clitheroe-and-ribble-valley.html" class="hover:text-brand-primary transition">Clitheroe &amp; Ribble Valley</a>
+            <a href="colne-and-pendle.html" class="hover:text-brand-primary transition">Colne &amp; Pendle</a>
+          </div>
         </div>
+
         <div>
           <h4 class="text-white font-bold text-lg mb-6 tracking-wide">Services</h4>
-          <ul class="space-y-3 text-sm"><li><a href="resin-driveways.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Resin Driveways</a></li><li><a href="indoor-epoxy.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Indoor Epoxy</a></li><li><a href="block-paving.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Block Paving</a></li><li><a href="tarmac.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Tarmac</a></li><li><a href="landscaping.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Landscaping</a></li></ul>
+          <ul class="space-y-3 text-sm">
+            <li><a href="resin-driveways.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Resin Driveways</a></li>
+            <li><a href="indoor-epoxy.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Indoor Epoxy</a></li>
+            <li><a href="block-paving.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Block Paving</a></li>
+            <li><a href="tarmac.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Tarmac</a></li>
+            <li><a href="landscaping.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Landscaping</a></li>
+          </ul>
         </div>
+
         <div>
           <h4 class="text-white font-bold text-lg mb-6 tracking-wide">Contact Info</h4>
           <ul class="space-y-4 text-sm">
-            <li class="flex items-start"><i class="fas fa-phone mt-1.5 mr-3 text-brand-primary"></i><div><span class="block text-xs text-gray-500 uppercase mb-0.5">Call Us</span><a href="tel:07548849682" class="hover:text-white font-bold text-gray-200">07548 849 682</a></div></li>
-            <li class="flex items-start"><i class="fas fa-envelope mt-1.5 mr-3 text-brand-primary"></i><div><span class="block text-xs text-gray-500 uppercase mb-0.5">Email</span><a href="mailto:bensutcliffe31@outlook.com" class="hover:text-white break-all">bensutcliffe31@outlook.com</a></div></li>
+            <li class="flex items-start">
+              <i class="fas fa-phone mt-1.5 mr-3 text-brand-primary"></i>
+              <div>
+                <span class="block text-xs text-gray-500 uppercase mb-0.5">Call Us</span>
+                <a href="tel:07548849682" class="hover:text-white font-bold text-gray-200">07548 849 682</a>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1.5 mr-3 text-brand-primary"></i>
+              <div>
+                <span class="block text-xs text-gray-500 uppercase mb-0.5">Email</span>
+                <a href="mailto:bensutcliffe31@outlook.com" class="hover:text-white break-all">bensutcliffe31@outlook.com</a>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
+
       <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
         <p>&copy; 2026 Sutcliffe Surfacing. All rights reserved.</p>
-        <div class="mt-4 md:mt-0 space-x-6"><a href="contact.html" class="hover:text-white transition">Contact</a><a href="about.html" class="hover:text-white transition">About</a><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></div>
+        <div class="mt-4 md:mt-0 space-x-6">
+          <a href="contact.html" class="hover:text-white transition">Contact</a>
+          <a href="about.html" class="hover:text-white transition">About</a>
+          <a href="portfolio.html" class="hover:text-white transition">Portfolio</a>
+        </div>
       </div>
     </div>
   </footer>
-  <script src="menu-loader.js"></script>
+
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuLinks = document.querySelectorAll('.menu-link');
+
+    function toggleMenu() {
+        if (!mobileMenu) return;
+        const isHidden = mobileMenu.classList.contains('translate-x-full');
+        if (isHidden) {
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        } else {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
+    if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
+    menuLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+    // FAQ Accordion Toggle
+    function toggleFaq(element) {
+        const allFaqs = document.querySelectorAll('.faq-item');
+        allFaqs.forEach(faq => {
+            if (faq !== element && faq.classList.contains('active')) {
+                faq.classList.remove('active');
+            }
+        });
+        element.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>

@@ -92,7 +92,7 @@
         <i class="fas fa-phone mr-2"></i> Free Site Survey
       </div>
       <h1 class="font-heading font-bold text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight drop-shadow-2xl">Contact <span class="text-brand-primary">Sutcliffe Surfacing</span></h1>
-      <p class="text-gray-200 text-lg md:text-xl lg:text-2xl mb-10 max-w-3xl mx-auto drop-shadow-md font-medium">Tell us about the surface, the property and the finish you want. We will help you plan the next step clearly.</p>
+      <p class="text-gray-200 text-lg md:text-xl lg:text-2xl mb-10 max-w-3xl mx-auto drop-shadow-md font-medium">Call, email or send a quote request for resin driveways, epoxy floors, paving, tarmac, landscaping and groundworks.</p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
         <a href="contact.html" class="bg-brand-primary text-white font-bold py-4 px-10 rounded-full shadow-2xl hover:bg-white hover:text-black transition transform hover:scale-105 w-full sm:w-auto text-lg">Get Your Free Quote</a>
         <a href="portfolio.html" class="bg-black/40 backdrop-blur-md border border-brand-primary/50 text-white font-bold py-4 px-10 rounded-full hover:bg-white hover:text-black transition w-full sm:w-auto text-lg">View Our Work</a>
@@ -102,24 +102,63 @@
 
   <main>
       <section class="py-16 md:py-24 bg-brand-offwhite">
-        <div class="container mx-auto px-4 max-w-6xl grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-start">
-          <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-            <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Speak To Us</span>
-            <h2 class="font-heading font-black text-3xl text-black mb-6">Start with a quick call or email.</h2>
-            <div class="space-y-5">
-              <a href="tel:07548849682" class="flex items-center gap-4 rounded-xl bg-brand-offwhite border border-gray-100 p-5 hover:shadow-md transition"><i class="fas fa-phone text-brand-primary text-2xl"></i><span><strong class="block text-black">Call 07548 849 682</strong><span class="text-gray-600 text-sm">Best for quick survey and quote discussions.</span></span></a>
-              <a href="mailto:bensutcliffe31@outlook.com" class="flex items-center gap-4 rounded-xl bg-brand-offwhite border border-gray-100 p-5 hover:shadow-md transition"><i class="fas fa-envelope text-brand-primary text-2xl"></i><span><strong class="block text-black break-all">bensutcliffe31@outlook.com</strong><span class="text-gray-600 text-sm">Useful if you want to send photos or measurements.</span></span></a>
+        <div class="container mx-auto px-4 max-w-7xl grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-start">
+          <div class="space-y-6">
+            <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+              <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Call Us</span>
+              <h2 class="font-heading font-black text-3xl text-black mb-5">The quickest route is a direct call.</h2>
+              <p class="text-gray-600 leading-relaxed mb-6">For surveys, rough pricing questions, access concerns or urgent driveway issues, call and describe the property. Photos can follow by email if needed.</p>
+              <a href="tel:07548849682" class="flex items-center justify-center gap-3 bg-brand-primary text-white font-bold py-4 px-6 rounded-full hover:bg-black transition text-lg"><i class="fas fa-phone"></i> 07548 849 682</a>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <a href="mailto:bensutcliffe31@outlook.com" class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:shadow-xl transition"><i class="fas fa-envelope text-brand-primary text-2xl mb-3"></i><strong class="block text-black mb-1">Email photos</strong><span class="text-sm text-gray-600 break-all">bensutcliffe31@outlook.com</span></a>
+              <div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm"><i class="fas fa-map-marker-alt text-brand-primary text-2xl mb-3"></i><strong class="block text-black mb-1">Service area</strong><span class="text-sm text-gray-600">Lancashire and surrounding areas</span></div>
             </div>
           </div>
+          <form name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact" class="bg-white rounded-2xl p-6 md:p-8 shadow-xl border border-gray-100">
+            <input type="hidden" name="form-name" value="quote-request">
+            <input type="hidden" name="subject" value="New Sutcliffe Surfacing quote request">
+            <p class="hidden"><label>Do not fill this out: <input name="bot-field"></label></p>
+            <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Quote Request</span>
+            <h2 class="font-heading font-black text-3xl text-black mb-6">Send project details</h2>
+            <div class="grid sm:grid-cols-2 gap-4 mb-4">
+              <label class="block"><span class="font-bold text-sm text-gray-800 block mb-2">Name</span><input required name="name" type="text" class="w-full rounded-xl border border-gray-200 px-4 py-3 bg-brand-offwhite" autocomplete="name"></label>
+              <label class="block"><span class="font-bold text-sm text-gray-800 block mb-2">Phone</span><input required name="phone" type="tel" class="w-full rounded-xl border border-gray-200 px-4 py-3 bg-brand-offwhite" autocomplete="tel"></label>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4 mb-4">
+              <label class="block"><span class="font-bold text-sm text-gray-800 block mb-2">Email</span><input name="email" type="email" class="w-full rounded-xl border border-gray-200 px-4 py-3 bg-brand-offwhite" autocomplete="email"></label>
+              <label class="block"><span class="font-bold text-sm text-gray-800 block mb-2">Location</span><input required name="location" type="text" class="w-full rounded-xl border border-gray-200 px-4 py-3 bg-brand-offwhite" placeholder="Town or postcode area"></label>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4 mb-4">
+              <label class="block"><span class="font-bold text-sm text-gray-800 block mb-2">Service</span><select required name="service" class="w-full rounded-xl border border-gray-200 px-4 py-3 bg-brand-offwhite"><option value="">Choose one</option><option>Resin driveway</option><option>Indoor epoxy flooring</option><option>Block paving or flagging</option><option>Tarmac surfacing</option><option>Landscaping or groundworks</option><option>Not sure yet</option></select></label>
+              <label class="block"><span class="font-bold text-sm text-gray-800 block mb-2">Timescale</span><select name="timescale" class="w-full rounded-xl border border-gray-200 px-4 py-3 bg-brand-offwhite"><option>Flexible</option><option>As soon as possible</option><option>Within 1 month</option><option>Within 3 months</option><option>Planning ahead</option></select></label>
+            </div>
+            <label class="block mb-5"><span class="font-bold text-sm text-gray-800 block mb-2">Project details</span><textarea required name="message" rows="5" class="w-full rounded-xl border border-gray-200 px-4 py-3 bg-brand-offwhite" placeholder="Tell us about the current surface, rough size, access, drainage or finish you want."></textarea></label>
+            <button type="submit" class="w-full bg-brand-primary text-white font-bold py-4 px-6 rounded-full hover:bg-black transition text-lg"><i class="fas fa-paper-plane mr-2"></i>Send Quote Request</button>
+            <p class="text-xs text-gray-500 leading-relaxed mt-4">This form is handled securely by Netlify Forms. For photos, send them by email after submitting or contact us directly.</p>
+          </form>
+        </div>
+      </section>
+      <section class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-7xl grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-start">
           <div>
-            <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">What To Include</span>
-            <h2 class="text-3xl md:text-5xl font-heading font-black text-black mb-6">A few details help us quote properly.</h2>
-            <p class="text-gray-600 text-lg leading-relaxed mb-6">The more context you can share, the quicker we can understand the job. Photos of the existing surface, rough measurements and the finish you like are all useful.</p>
-            <div class="grid sm:grid-cols-2 gap-4"><div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm"><i class="fas fa-circle-check text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Property location</p></div><div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm"><i class="fas fa-circle-check text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Surface type you want</p></div><div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm"><i class="fas fa-circle-check text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Approximate area size</p></div><div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm"><i class="fas fa-circle-check text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Photos of the current space</p></div><div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm"><i class="fas fa-circle-check text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Drainage or access concerns</p></div><div class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm"><i class="fas fa-circle-check text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Preferred timescale</p></div></div>
+            <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Service Area Map</span>
+            <h2 class="font-heading font-black text-3xl md:text-5xl text-black mb-5">Covering Lancashire and surrounding areas</h2>
+            <p class="text-gray-600 text-lg leading-relaxed mb-6">Sutcliffe Surfacing works across Lancashire and nearby areas, including Burnley, Blackburn, Preston, Clitheroe, Pendle, Nelson, Brierfield, Lancaster, Morecambe and Skipton.</p>
+            <div class="grid sm:grid-cols-2 gap-3"><div class="rounded-xl bg-brand-offwhite border border-gray-100 p-4 font-bold text-gray-800"><i class="fas fa-location-dot text-brand-primary mr-2"></i>Burnley</div><div class="rounded-xl bg-brand-offwhite border border-gray-100 p-4 font-bold text-gray-800"><i class="fas fa-location-dot text-brand-primary mr-2"></i>Blackburn</div><div class="rounded-xl bg-brand-offwhite border border-gray-100 p-4 font-bold text-gray-800"><i class="fas fa-location-dot text-brand-primary mr-2"></i>Preston</div><div class="rounded-xl bg-brand-offwhite border border-gray-100 p-4 font-bold text-gray-800"><i class="fas fa-location-dot text-brand-primary mr-2"></i>Clitheroe</div><div class="rounded-xl bg-brand-offwhite border border-gray-100 p-4 font-bold text-gray-800"><i class="fas fa-location-dot text-brand-primary mr-2"></i>Colne &amp; Pendle</div><div class="rounded-xl bg-brand-offwhite border border-gray-100 p-4 font-bold text-gray-800"><i class="fas fa-location-dot text-brand-primary mr-2"></i>Nelson &amp; Brierfield</div><div class="rounded-xl bg-brand-offwhite border border-gray-100 p-4 font-bold text-gray-800"><i class="fas fa-location-dot text-brand-primary mr-2"></i>Lancaster &amp; Morecambe</div><div class="rounded-xl bg-brand-offwhite border border-gray-100 p-4 font-bold text-gray-800"><i class="fas fa-location-dot text-brand-primary mr-2"></i>Skipton</div></div>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-brand-offwhite min-h-[420px]">
+            <iframe title="Sutcliffe Surfacing service area map" src="https://www.google.com/maps?q=Lancashire%2C%20UK&output=embed" class="w-full h-[420px]" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>
-      <section class="py-16 md:py-20 bg-white"><div class="container mx-auto px-4 max-w-7xl"><div class="text-center max-w-3xl mx-auto mb-12"><span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Quote Routes</span><h2 class="font-heading font-black text-3xl md:text-5xl text-black">The right information gets you a better answer</h2></div><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <section class="py-16 md:py-20 bg-brand-offwhite">
+        <div class="container mx-auto px-4 max-w-7xl">
+          <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Before We Visit</span>
+            <h2 class="font-heading font-black text-3xl md:text-5xl text-black">The right information gets you a better answer</h2>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
     <article class="bg-white rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-xl transition">
       <i class="fas fa-camera text-brand-primary text-3xl mb-4"></i>
       <h3 class="font-heading font-bold text-xl text-black mb-3">Send photos</h3>
@@ -134,7 +173,56 @@
       <i class="fas fa-lightbulb text-brand-primary text-3xl mb-4"></i>
       <h3 class="font-heading font-bold text-xl text-black mb-3">Describe the goal</h3>
       <p class="text-gray-600 leading-relaxed text-sm">Tell us whether the priority is kerb appeal, parking, low maintenance, durability or a full garden change.</p>
-    </article></div></div></section>
+    </article>
+    <article class="bg-white rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-xl transition">
+      <i class="fas fa-truck-pickup text-brand-primary text-3xl mb-4"></i>
+      <h3 class="font-heading font-bold text-xl text-black mb-3">Mention access</h3>
+      <p class="text-gray-600 leading-relaxed text-sm">Let us know about narrow lanes, shared driveways, steps, steep slopes or parking restrictions.</p>
+    </article>
+    <article class="bg-white rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-xl transition">
+      <i class="fas fa-droplet text-brand-primary text-3xl mb-4"></i>
+      <h3 class="font-heading font-bold text-xl text-black mb-3">Flag drainage issues</h3>
+      <p class="text-gray-600 leading-relaxed text-sm">Standing water, blocked gullies or water running towards the house should be discussed early.</p>
+    </article>
+    <article class="bg-white rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-xl transition">
+      <i class="fas fa-calendar-check text-brand-primary text-3xl mb-4"></i>
+      <h3 class="font-heading font-bold text-xl text-black mb-3">Give a timescale</h3>
+      <p class="text-gray-600 leading-relaxed text-sm">A rough timescale helps us advise on survey availability, preparation and installation planning.</p>
+    </article></div>
+        </div>
+      </section>
+      <section class="py-16 md:py-20 bg-black text-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="grid lg:grid-cols-[0.9fr_1.3fr] gap-10 items-start">
+        <div>
+          <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Clear Process</span>
+          <h2 class="text-3xl md:text-5xl font-heading font-black mb-5">How the quote process works</h2>
+          <p class="text-gray-300 leading-relaxed">Good surfacing is planned before it is installed. We look at access, drainage, levels, preparation and the finish you want before recommending the right build-up.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <span class="text-brand-primary font-heading font-black text-3xl">01</span>
+            <h3 class="font-heading font-bold text-xl mt-3 mb-2">Send the details</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">Call, email or use the quote form with your location, service type, rough size and photos if available.</p>
+          </article>
+          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <span class="text-brand-primary font-heading font-black text-3xl">02</span>
+            <h3 class="font-heading font-bold text-xl mt-3 mb-2">Book a survey</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">We arrange a suitable time to look at the surface, access, levels, drainage and finish options.</p>
+          </article>
+          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <span class="text-brand-primary font-heading font-black text-3xl">03</span>
+            <h3 class="font-heading font-bold text-xl mt-3 mb-2">Receive a clear quote</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">The quote explains the preparation, material choice, edge details and expected scope.</p>
+          </article>
+          <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+            <span class="text-brand-primary font-heading font-black text-3xl">04</span>
+            <h3 class="font-heading font-bold text-xl mt-3 mb-2">Plan the work</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">Once accepted, we agree timing and explain what needs to happen before installation begins.</p>
+          </article></div>
+      </div>
+    </div>
+  </section>
       <section class="py-16 md:py-20 bg-white">
     <div class="container mx-auto px-4 max-w-6xl">
       <div class="grid lg:grid-cols-2 gap-10">

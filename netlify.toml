@@ -1,6 +1,91 @@
 [build]
   publish = "."
 
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/portfolio"
+  to = "/portfolio.html"
+  status = 200
+
+[[redirects]]
+  from = "/reviews"
+  to = "/reviews.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/resin-driveways"
+  to = "/resin-driveways.html"
+  status = 200
+
+[[redirects]]
+  from = "/indoor-epoxy"
+  to = "/indoor-epoxy.html"
+  status = 200
+
+[[redirects]]
+  from = "/block-paving"
+  to = "/block-paving.html"
+  status = 200
+
+[[redirects]]
+  from = "/tarmac"
+  to = "/tarmac.html"
+  status = 200
+
+[[redirects]]
+  from = "/landscaping"
+  to = "/landscaping.html"
+  status = 200
+
+[[redirects]]
+  from = "/burnley"
+  to = "/burnley.html"
+  status = 200
+
+[[redirects]]
+  from = "/blackburn"
+  to = "/blackburn.html"
+  status = 200
+
+[[redirects]]
+  from = "/preston"
+  to = "/preston.html"
+  status = 200
+
+[[redirects]]
+  from = "/clitheroe-and-ribble-valley"
+  to = "/clitheroe-and-ribble-valley.html"
+  status = 200
+
+[[redirects]]
+  from = "/colne-and-pendle"
+  to = "/colne-and-pendle.html"
+  status = 200
+
+[[redirects]]
+  from = "/nelson-and-brierfield"
+  to = "/nelson-and-brierfield.html"
+  status = 200
+
+[[redirects]]
+  from = "/lancaster-and-morecambe"
+  to = "/lancaster-and-morecambe.html"
+  status = 200
+
+[[redirects]]
+  from = "/skipton"
+  to = "/skipton.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]

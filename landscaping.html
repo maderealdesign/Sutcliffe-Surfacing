@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscaping | Sutcliffe Surfacing</title>
+    <meta name="description" content="Complete landscaping, fencing, concreting and groundwork support to finish driveways, gardens and outdoor spaces properly.">
+    <link rel="canonical" href="https://sutcliffe-surfacing.co.uk/landscaping.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#000000',
+                            primary: '#cca45e',
+                            light: '#e8d5b5',
+                            accent: '#FFFFFF',
+                            offwhite: '#F9F8F6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        #mobile-menu { transition: transform 0.3s ease-in-out; }
+        input:focus, select:focus, textarea:focus { outline: none; border-color: #cca45e; box-shadow: 0 0 0 3px rgba(204, 164, 94, 0.2); }
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cca45e; }
+        ::-webkit-scrollbar-thumb:hover { background: #b58d47; }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-brand-offwhite antialiased selection:bg-brand-primary selection:text-white">
+    <div class="hidden md:block bg-gray-900 text-gray-300 py-2 text-sm border-b border-gray-800">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <p><i class="fas fa-map-marker-alt text-brand-primary mr-2"></i> Serving Lancashire and Surrounding Areas</p>
+            <div class="flex space-x-4">
+                <a href="mailto:bensutcliffe31@outlook.com" class="hover:text-white transition"><i class="fas fa-envelope mr-1"></i> bensutcliffe31@outlook.com</a>
+                <a href="tel:07548849682" class="hover:text-white transition font-bold"><i class="fas fa-phone mr-1"></i> 07548 849 682</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white text-gray-800 shadow-xl border-b border-gray-100">
+        <div class="container mx-auto px-4 py-4 md:py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center group">
+                <img src="https://imagerenamer.co.uk/api/file/C2iHJVY7M1XjYLhyTUGOvgneqaC2/efce5eab-6a54-4f0b-b868-d91dc6a517e7/c96ff8c9-9648-4569-af14-fd0749b40aa8-sutcliffe-surfacing-logo.webp" alt="Sutcliffe Surfacing" class="h-10 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+            </a>
+            <div class="hidden lg:flex items-center space-x-7 font-heading font-semibold text-sm tracking-wide">
+                <a href="index.html" class="text-gray-700 hover:text-brand-primary transition">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-brand-primary transition">About</a>
+                <a href="portfolio.html" class="text-gray-700 hover:text-brand-primary transition">Portfolio</a>
+                <a href="reviews.html" class="text-gray-700 hover:text-brand-primary transition">Reviews</a>
+                <a href="resin-driveways.html" class="text-gray-700 hover:text-brand-primary transition">Resin Driveways</a>
+                <a href="indoor-epoxy.html" class="text-gray-700 hover:text-brand-primary transition">Indoor Epoxy</a>
+                <a href="block-paving.html" class="text-gray-700 hover:text-brand-primary transition">Block Paving</a>
+                <a href="tarmac.html" class="text-gray-700 hover:text-brand-primary transition">Tarmac</a>
+                <a href="landscaping.html" class="text-gray-700 hover:text-brand-primary transition">Landscaping</a>
+                <a href="contact.html" class="bg-brand-primary text-white px-6 py-2.5 rounded-full hover:bg-gray-900 transition shadow-lg font-bold transform hover:-translate-y-0.5 border-2 border-brand-primary">Get a Quote</a>
+            </div>
+            <div class="flex items-center lg:hidden space-x-5">
+                <a href="tel:07548849682" class="text-brand-primary text-xl hover:text-gray-900 transition"><i class="fas fa-phone"></i></a>
+                <button id="menu-btn" class="text-gray-800 text-2xl focus:outline-none hover:text-brand-primary transition"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-40 transform translate-x-full lg:hidden flex flex-col pt-24 px-6 space-y-5 text-xl font-heading font-bold shadow-2xl text-gray-800 border-l border-gray-100 overflow-y-auto">
+        <button id="close-menu" class="absolute top-6 right-6 text-3xl text-gray-400 p-2 hover:text-gray-800"><i class="fas fa-times"></i></button>
+        <a href="index.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Home</a>
+        <a href="about.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">About Us</a>
+        <a href="portfolio.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Portfolio</a>
+        <a href="reviews.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Reviews</a>
+        <a href="resin-driveways.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Resin Driveways</a>
+        <a href="indoor-epoxy.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Indoor Epoxy</a>
+        <a href="block-paving.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Block Paving</a>
+        <a href="tarmac.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Tarmac</a>
+        <a href="landscaping.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Landscaping</a>
+        <a href="contact.html" class="text-brand-primary mt-4">Get a Free Quote</a>
+        <div class="mt-auto mb-10 text-sm font-normal text-gray-500"><p>Call us directly:</p><a href="tel:07548849682" class="text-3xl font-bold text-gray-900 block mt-1">07548 849 682</a></div>
+    </div>
+<header class="relative min-h-[520px] flex items-center justify-center text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 w-full h-full z-0">
+            <img src="https://www.fairwayslandscapes.com/wp-content/uploads/2020/06/fairways-landscapes-middleton-chadderton-1.jpg" alt="&lt;span class="text-brand-primary"&gt;Landscaping&lt;/span&gt; &amp; Groundworks" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-black/70"></div>
+        </div>
+        <div class="relative z-10 max-w-5xl mx-auto mt-8 py-20">
+            <div class="inline-flex items-center bg-brand-primary text-white font-bold text-xs px-4 py-1.5 rounded-full mb-6 tracking-widest uppercase shadow-md">
+                <i class="fas fa-certificate mr-2"></i> City &amp; Guilds Qualified
+            </div>
+            <h1 class="font-heading font-bold text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight drop-shadow-2xl"><span class="text-brand-primary">Landscaping</span> & Groundworks</h1>
+            <p class="text-gray-200 text-lg md:text-xl lg:text-2xl mb-10 max-w-3xl mx-auto drop-shadow-md font-medium">Complete landscaping, fencing, concreting and groundwork support to finish driveways, gardens and outdoor spaces properly.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html" class="bg-brand-primary text-white font-bold py-4 px-10 rounded-full shadow-2xl hover:bg-white hover:text-black transition transform hover:scale-105 w-full sm:w-auto text-lg">Get Your Free Quote</a>
+                <a href="portfolio.html" class="bg-black/40 backdrop-blur-md border border-brand-primary/50 text-white font-bold py-4 px-10 rounded-full hover:bg-white hover:text-black transition w-full sm:w-auto text-lg">View Our Work</a>
+            </div>
+        </div>
+    </header>
+<main>
+    <section class="py-20 md:py-28 bg-brand-offwhite">
+      <div class="container mx-auto px-4 max-w-6xl grid lg:grid-cols-2 gap-14 items-start">
+        <div>
+          <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-2">Professional Installation</span>
+          <h2 class="text-3xl md:text-5xl font-heading font-black text-black mb-6 leading-tight">Built properly from the ground up.</h2>
+          <p class="text-gray-600 leading-relaxed text-lg mb-6">Complete landscaping, fencing, concreting and groundwork support to finish driveways, gardens and outdoor spaces properly. Every project starts with the right preparation, because a premium finish is only as good as the base below it.</p>
+          <ul class="space-y-4 mb-8"><li class="flex items-start text-gray-800 font-bold"><i class="fas fa-check-circle text-brand-primary mr-3 mt-1 text-xl"></i><span>Fencing, concreting, turfing and garden preparation</span></li><li class="flex items-start text-gray-800 font-bold"><i class="fas fa-check-circle text-brand-primary mr-3 mt-1 text-xl"></i><span>Steps, borders, retaining details and drainage</span></li><li class="flex items-start text-gray-800 font-bold"><i class="fas fa-check-circle text-brand-primary mr-3 mt-1 text-xl"></i><span>Ideal alongside resin, paving and tarmac projects</span></li><li class="flex items-start text-gray-800 font-bold"><i class="fas fa-check-circle text-brand-primary mr-3 mt-1 text-xl"></i><span>One team to manage the full outdoor transformation</span></li></ul>
+          <a href="contact.html" class="inline-flex items-center font-bold text-brand-primary hover:text-black transition text-lg">Book a free survey <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+          <h3 class="font-heading font-black text-2xl text-black mb-6">What we check before quoting</h3>
+          <div class="grid sm:grid-cols-2 gap-5 text-sm"><div class="bg-brand-offwhite rounded-xl p-4"><i class="fas fa-ruler-combined text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Existing surface condition</p></div><div class="bg-brand-offwhite rounded-xl p-4"><i class="fas fa-ruler-combined text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Drainage and falls</p></div><div class="bg-brand-offwhite rounded-xl p-4"><i class="fas fa-ruler-combined text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Access and waste removal</p></div><div class="bg-brand-offwhite rounded-xl p-4"><i class="fas fa-ruler-combined text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Edging and restraints</p></div><div class="bg-brand-offwhite rounded-xl p-4"><i class="fas fa-ruler-combined text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Material/colour choice</p></div><div class="bg-brand-offwhite rounded-xl p-4"><i class="fas fa-ruler-combined text-brand-primary mb-3"></i><p class="font-bold text-gray-800">Expected usage</p></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4 max-w-7xl">
+        <div class="grid md:grid-cols-3 gap-6"><article class="bg-brand-offwhite rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition"><i class="fas fa-tree text-brand-primary text-3xl mb-5"></i><h3 class="font-heading font-bold text-2xl text-black mb-3">Complete gardens</h3><p class="text-gray-600 leading-relaxed">We can shape the wider outdoor space so the new surface looks intentional and finished.</p></article><article class="bg-brand-offwhite rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition"><i class="fas fa-fence text-brand-primary text-3xl mb-5"></i><h3 class="font-heading font-bold text-2xl text-black mb-3">Fencing &amp; boundaries</h3><p class="text-gray-600 leading-relaxed">Fresh fencing and edging can make a driveway or patio project feel complete.</p></article><article class="bg-brand-offwhite rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition"><i class="fas fa-hard-hat text-brand-primary text-3xl mb-5"></i><h3 class="font-heading font-bold text-2xl text-black mb-3">Groundworks</h3><p class="text-gray-600 leading-relaxed">Good landscaping starts with levels, drainage, foundations and the correct base.</p></article></div>
+      </div>
+    </section>
+    <section class="py-20 bg-brand-offwhite">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <h2 class="text-3xl md:text-5xl font-heading font-black text-black mb-10 text-center">Common questions</h2>
+        <div class="space-y-4"><div class="bg-white rounded-xl p-6 border border-gray-200"><h3 class="font-bold text-lg text-black mb-2">Do you provide free quotes?</h3><p class="text-gray-600 leading-relaxed">Yes. We offer a free initial survey and clear quotation so you understand the preparation, materials and finish before committing.</p></div><div class="bg-white rounded-xl p-6 border border-gray-200"><h3 class="font-bold text-lg text-black mb-2">Do you handle preparation?</h3><p class="text-gray-600 leading-relaxed">Yes. We can manage excavation, sub-base preparation, drainage considerations, edging, waste removal and installation.</p></div><div class="bg-white rounded-xl p-6 border border-gray-200"><h3 class="font-bold text-lg text-black mb-2">Are you qualified installers?</h3><p class="text-gray-600 leading-relaxed">Yes. Sutcliffe Surfacing is City &amp; Guilds qualified and focuses on durable installation rather than quick cosmetic cover-ups.</p></div></div>
+      </div>
+    </section>
+  </main>
+<section class="py-20 bg-black text-white">
+    <div class="container mx-auto px-4 max-w-5xl text-center">
+      <span class="text-brand-primary font-bold uppercase tracking-widest text-sm block mb-3">Free Site Survey</span>
+      <h2 class="font-heading font-black text-3xl md:text-5xl mb-5">Ready to improve your surface?</h2>
+      <p class="text-gray-300 text-lg max-w-3xl mx-auto mb-8">Tell us what you want to achieve and we will advise on the right build-up, finish, drainage and preparation before quoting clearly.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4"><a href="tel:07548849682" class="bg-brand-primary text-white font-bold py-4 px-8 rounded-full hover:bg-white hover:text-black transition"><i class="fas fa-phone mr-2"></i>Call 07548 849 682</a><a href="contact.html" class="border border-brand-primary/70 text-white font-bold py-4 px-8 rounded-full hover:bg-white hover:text-black transition">Request a Quote</a></div>
+    </div>
+  </section>
+<footer class="bg-gray-950 text-gray-400 py-16 border-t border-gray-900">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="grid md:grid-cols-4 gap-10 mb-12">
+                <div class="md:col-span-2">
+                    <img src="https://imagerenamer.co.uk/api/file/C2iHJVY7M1XjYLhyTUGOvgneqaC2/efce5eab-6a54-4f0b-b868-d91dc6a517e7/c96ff8c9-9648-4569-af14-fd0749b40aa8-sutcliffe-surfacing-logo.webp" alt="Sutcliffe Surfacing Logo" class="h-12 w-auto mb-6 opacity-90 brightness-0 invert">
+                    <p class="text-sm leading-relaxed mb-6 max-w-sm">Professional, City & Guilds qualified installers specialising in exterior resin bound driveways, bespoke indoor epoxy flooring, block paving, tarmac, landscaping and groundworks.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6 tracking-wide">Services</h4>
+                    <ul class="space-y-3 text-sm"><li><a href="resin-driveways.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Resin Driveways</a></li><li><a href="indoor-epoxy.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Indoor Epoxy</a></li><li><a href="block-paving.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Block Paving</a></li><li><a href="tarmac.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Tarmac</a></li><li><a href="landscaping.html" class="hover:text-brand-primary transition flex items-center"><i class="fas fa-angle-right text-brand-primary mr-2 text-xs"></i> Landscaping</a></li></ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6 tracking-wide">Contact Info</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start"><i class="fas fa-phone mt-1.5 mr-3 text-brand-primary"></i><div><span class="block text-xs text-gray-500 uppercase mb-0.5">Call Us</span><a href="tel:07548849682" class="hover:text-white font-bold text-gray-200">07548 849 682</a></div></li>
+                        <li class="flex items-start"><i class="fas fa-envelope mt-1.5 mr-3 text-brand-primary"></i><div><span class="block text-xs text-gray-500 uppercase mb-0.5">Email</span><a href="mailto:bensutcliffe31@outlook.com" class="hover:text-white break-all">bensutcliffe31@outlook.com</a></div></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
+                <p>&copy; 2026 Sutcliffe Surfacing. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 space-x-6"><a href="contact.html" class="hover:text-white transition">Contact</a><a href="about.html" class="hover:text-white transition">About</a><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="menu-loader.js"></script>
+</body>
+</html>

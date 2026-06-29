@@ -109,53 +109,29 @@
         </div>
     </div>
 
-    <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-white text-gray-800 shadow-xl border-b border-gray-100">
         <div class="container mx-auto px-4 py-4 md:py-3 flex justify-between items-center">
-            <!-- Logo - Updated to Sutcliffe Surfacing -->
-            <a href="#" class="flex items-center group">
+            <a href="index.html" class="flex items-center group">
                 <img src="https://imagerenamer.co.uk/api/file/C2iHJVY7M1XjYLhyTUGOvgneqaC2/efce5eab-6a54-4f0b-b868-d91dc6a517e7/c96ff8c9-9648-4569-af14-fd0749b40aa8-sutcliffe-surfacing-logo.webp" alt="Sutcliffe Surfacing" class="h-10 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
             </a>
 
-            <!-- Desktop Menu -->
-            <div class="hidden lg:flex items-center space-x-6 font-heading font-semibold text-sm tracking-wide">
-                <a href="/" class="text-gray-700 hover:text-brand-primary transition">Home</a>
-                <a href="/about" class="text-gray-700 hover:text-brand-primary transition">About</a>
-                <a href="/portfolio" class="text-gray-700 hover:text-brand-primary transition">Portfolio</a>
-                <a href="/reviews" class="text-gray-700 hover:text-brand-primary transition">Reviews</a>
-                <a href="/resin-driveways" class="text-gray-700 hover:text-brand-primary transition">Resin</a>
-                <a href="/indoor-epoxy" class="text-gray-700 hover:text-brand-primary transition">Epoxy</a>
-                <a href="/contact" class="bg-brand-primary text-white px-6 py-2.5 rounded-full hover:bg-gray-900 transition shadow-lg font-bold transform hover:-translate-y-0.5 border-2 border-brand-primary">Get a Quote</a>
+            <div class="hidden xl:flex items-center space-x-7 font-heading font-semibold text-sm tracking-wide">
+                <a href="index.html" class="text-brand-primary transition">Home</a><a href="about.html" class="text-gray-700 hover:text-brand-primary transition">About</a><a href="portfolio.html" class="text-gray-700 hover:text-brand-primary transition">Portfolio</a><a href="reviews.html" class="text-gray-700 hover:text-brand-primary transition">Reviews</a><a href="resin-driveways.html" class="text-gray-700 hover:text-brand-primary transition">Resin Driveways</a><a href="indoor-epoxy.html" class="text-gray-700 hover:text-brand-primary transition">Indoor Epoxy</a><a href="block-paving.html" class="text-gray-700 hover:text-brand-primary transition">Block Paving</a><a href="tarmac.html" class="text-gray-700 hover:text-brand-primary transition">Tarmac</a><a href="landscaping.html" class="text-gray-700 hover:text-brand-primary transition">Landscaping</a>
+                <a href="contact.html" class="bg-brand-primary text-white px-6 py-2.5 rounded-full hover:bg-gray-900 transition shadow-lg font-bold transform hover:-translate-y-0.5 border-2 border-brand-primary">Get a Quote</a>
             </div>
 
-            <!-- Mobile Menu Button & Call Icon -->
-            <div class="flex items-center lg:hidden space-x-5">
-                <a href="tel:07548849682" class="text-brand-primary text-xl hover:text-gray-900 transition">
-                    <i class="fas fa-phone"></i>
-                </a>
-                <button id="menu-btn" class="text-gray-800 text-2xl focus:outline-none hover:text-brand-primary transition">
-                    <i class="fas fa-bars"></i>
-                </button>
+            <div class="flex items-center xl:hidden space-x-5">
+                <a href="tel:07548849682" class="text-brand-primary text-xl hover:text-gray-900 transition"><i class="fas fa-phone"></i></a>
+                <button id="menu-btn" class="text-gray-800 text-2xl focus:outline-none hover:text-brand-primary transition" aria-label="Open menu"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 bg-white z-40 transform translate-x-full lg:hidden flex flex-col pt-24 px-6 space-y-6 text-xl font-heading font-bold shadow-2xl text-gray-800 border-l border-gray-100">
-        <button id="close-menu" class="absolute top-6 right-6 text-3xl text-gray-400 p-2 hover:text-gray-800">
-            <i class="fas fa-times"></i>
-        </button>
-        <a href="/" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Home</a>
-        <a href="/about" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">About Us</a>
-        <a href="/portfolio" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Portfolio</a>
-        <a href="/reviews" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Reviews</a>
-        <a href="/resin-driveways" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Resin Driveways</a>
-        <a href="/indoor-epoxy" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Indoor Epoxy</a>
-        <a href="/contact" class="text-brand-primary mt-4">Get a Free Quote</a>
-        <div class="mt-auto mb-10 text-sm font-normal text-gray-500">
-            <p>Call us directly:</p>
-            <a href="tel:07548849682" class="text-3xl font-bold text-gray-900 block mt-1">07548 849 682</a>
-        </div>
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-40 transform translate-x-full xl:hidden flex flex-col pt-24 px-6 space-y-5 text-xl font-heading font-bold shadow-2xl text-gray-800 border-l border-gray-100 overflow-y-auto">
+        <button id="close-menu" class="absolute top-6 right-6 text-3xl text-gray-400 p-2 hover:text-gray-800" aria-label="Close menu"><i class="fas fa-times"></i></button>
+        <a href="index.html" class="menu-link border-b border-gray-100 pb-3 text-brand-primary">Home</a><a href="about.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">About</a><a href="portfolio.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Portfolio</a><a href="reviews.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Reviews</a><a href="resin-driveways.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Resin Driveways</a><a href="indoor-epoxy.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Indoor Epoxy</a><a href="block-paving.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Block Paving</a><a href="tarmac.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Tarmac</a><a href="landscaping.html" class="menu-link border-b border-gray-100 pb-3 hover:text-brand-primary">Landscaping</a>
+        <a href="contact.html" class="text-brand-primary mt-4">Get a Free Quote</a>
+        <div class="mt-auto mb-10 text-sm font-normal text-gray-500"><p>Call us directly:</p><a href="tel:07548849682" class="text-3xl font-bold text-gray-900 block mt-1">07548 849 682</a></div>
     </div>
 
     <!-- HERO SECTION -->
